@@ -1,0 +1,31 @@
+box: node
+
+setup:
+  steps:
+    - script:
+      name: set yarn cache
+      code: yarn config set cache-folder $WERCKER_CACHE_DIR/yarn
+    - script:
+      name: install dependencies
+      code: yarn
+    - script:
+      name: ls
+      code: ls
+    - script:
+      name: test-unit
+      code: yarn test
+
+test-unit:
+  steps:
+    - script:
+      name: set yarn cache
+      code: yarn config set cache-folder $WERCKER_CACHE_DIR/yarn
+    - script:
+      name: install dependencies
+      code: yarn
+    - script:
+      name: ls
+      code: sleep 10000
+    - script:
+      name: test-unit
+      code: yarn test
