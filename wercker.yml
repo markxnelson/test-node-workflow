@@ -22,10 +22,10 @@ test-unit:
       code: yarn config set cache-folder $WERCKER_CACHE_DIR/yarn
     - script:
       name: install dependencies
-      code: yarn
+      code: yarn --verbose
     - script:
       name: ls
       code: ls
     - script:
       name: test-unit
-      code: yarn test
+      code: yarn test --verbose
