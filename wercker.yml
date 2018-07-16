@@ -10,7 +10,7 @@ setup:
       code: yarn
     - script:
       name: ls
-      code: ls
+      code: ls -a
     - script:
       name: test-unit
       code: yarn test
