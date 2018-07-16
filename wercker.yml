@@ -28,4 +28,4 @@ test-unit:
       code: ls
     - script:
       name: test-unit
-      code: yarn test --verbose
+      code: yarn --verbose test
